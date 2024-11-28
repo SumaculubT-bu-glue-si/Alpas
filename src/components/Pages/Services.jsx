@@ -108,6 +108,55 @@ function Services() {
             </div>
           </div>
         </div>
+
+        <div className="h-fit w-full bg-gray-800 mt-20">
+          <div className="flex w-3/4 py-20 shadow-md h-full m-auto text-gray-100">
+            <div className="flex flex-col my-auto gap-5">
+              <h1 className="md:text-6xl text-4xl font-bold">
+                Let's Bring Your Vision to Life
+              </h1>
+              <p>
+                Contact us today for a personalized consultation or to book our
+                exceptional services.
+              </p>
+              <div className="flex flex-row">
+                <div className="flex border border-gray-100 px-8 py-4">
+                  <p>Get Started</p>
+                </div>
+                <div className="flex     px-8 py-4">
+                  <p>Inquire</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex md:flex-row flex-col h-fit md:w-3/4 w-full m-auto mt-20 gap-10">
+          <div className="h-96 md:w-1/2 w-11/12 bg-white rounded-lg m-auto shadow-md border border-blue-200 hover:scale-105 ease-in-out duration-300"></div>
+          <div className="flex md:w-1/2 w-11/12 m-auto text-gray-900">
+            <div className="flex flex-col my-auto gap-10">
+              <div className="flex justify-between">
+                <p>Review</p>
+                <p className="font-bold text-3xl -mt-4">...</p>
+              </div>
+
+              <h1 className="md:text-3xl text-2xl font-semibold">
+                "The team exceeded our expectations! Their professionalism and
+                creativity made our event unforgettable."
+              </h1>
+              <div className="flex flex-row">
+                <div className="flex flex-col">
+                  <p className="font-bold">Emily Johnson</p>
+                  <p>Event Planner, ABC Events</p>
+                </div>
+                <div className="border-l-2 border-gray-900 mx-10"></div>
+                <div className="flex my-auto">
+                  <p className="text-lg font-bold">Century Mall Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

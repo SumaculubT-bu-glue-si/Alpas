@@ -43,9 +43,9 @@ function Navbar() {
               id="nav"
               className={`md:h-fit ${
                 isSetNav ? "h-fit" : "h-0"
-              } overflow-hidden md:relative absolute md:my-auto mt-16 md:bg-none md:bg-opacity-0 bg-gray-900 md:w-fit bg-opacity-90 w-full left-0 z-20 ease-in-out duration-300`}
+              } overflow-hidden md:relative absolute md:my-auto mt-16 md:bg-none md:bg-opacity-0 bg-gray-950 md:w-fit bg-opacity-95 w-full left-0 z-20 ease-in-out duration-300`}
             >
-              <ul className="flex md:flex-row flex-col text-center md:text-base text-sm py-4 my-auto gap-6 md:text-gray-900 text-white font-semibold">
+              <ul className="flex md:flex-row flex-col text-center md:text-base text-sm md:py-4 py-10 my-auto md:gap-6 gap-12 md:text-gray-900 text-white font-semibold">
                 {navs.map((nav, index) => (
                   <li>
                     <Link
@@ -53,7 +53,7 @@ function Navbar() {
                       className={
                         selectedIndex === index
                           ? "cursor-pointer md:border-none border-b md:px-0 py-3 px-16 md:text-blue-700 text-gray-500 ease-in-out duration-300"
-                          : "cursor-pointer md:border-none border-b py-3 ease-in-out duration-300 md:hover:text-blue-700 hover:text-gray-500"
+                          : "cursor-pointer md:border-none border-b py-3 my-ease-in-out duration-300 md:hover:text-blue-700 hover:text-gray-500"
                       }
                       key={nav}
                       onClick={() => {
