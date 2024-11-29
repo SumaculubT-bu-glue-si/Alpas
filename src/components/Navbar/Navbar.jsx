@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex flex-col absolute w-full z-40">
+      <div className=" flex flex-col w-full z-40">
         <nav className="flex bg-white flex-row w-full md:h-20 h-16 overflow-hidden">
           <div className="flex md:w-3/4 w-11/12 justify-between mx-auto">
             <div>
@@ -43,17 +43,25 @@ function Navbar() {
               id="nav"
               className={`md:h-fit ${
                 isSetNav ? "h-fit" : "h-0"
-              } overflow-hidden md:relative absolute md:my-auto mt-16 md:bg-none md:bg-opacity-0 bg-gray-950 md:w-fit bg-opacity-95 w-full left-0 z-20 ease-in-out duration-300`}
+              } overflow-hidden md:relative absolute md:my-auto mt-16 md:bg-none md:bg-opacity-0 bg-gray-950 md:w-fit bg-opacity-95 w-full left-0 z-20 duration-300`}
             >
-              <ul className="flex md:flex-row flex-col text-center md:text-base text-sm md:py-4 py-10 my-auto md:gap-6 gap-12 md:text-gray-900 text-white font-semibold">
+              <ul className="flex md:flex-row flex-col my-auto md:gap-6 md:py-0 py-10">
                 {navs.map((nav, index) => (
-                  <li>
+                  <li
+                    className={
+                      nav == "ContactUs"
+                        ? "md:bg-yellow-600 mx-auto text-white my-auto px-6 py-4 rounded-xl font-semibold md:hover:bg-white duration-300 "
+                        : "text-center md:text-base text-sm md:py-4 py-4 md:text-gray-900 text-white font-semibold"
+                    }
+                  >
                     <Link
                       to={`/${nav}`}
                       className={
                         selectedIndex === index
-                          ? "cursor-pointer md:border-none border-b md:px-0 py-3 px-16 md:text-blue-700 text-gray-500 ease-in-out duration-300"
-                          : "cursor-pointer md:border-none border-b py-3 my-ease-in-out duration-300 md:hover:text-blue-700 hover:text-gray-500"
+                          ? nav === "ContactUs"
+                            ? "cursor-pointer md:border-none border-b md:px-0 py-3 px-16 md:text-white text-gray-500 md:hover:text-blue-700 ease-in-out duration-300"
+                            : "cursor-pointer md:border-none border-b md:px-0 py-3 px-16 md:text-blue-700 text-gray-500 ease-in-out duration-300"
+                          : "cursor-pointer md:border-none border-b py-3 ease-in-out duration-300 md:hover:text-blue-700 hover:text-gray-500"
                       }
                       key={nav}
                       onClick={() => {

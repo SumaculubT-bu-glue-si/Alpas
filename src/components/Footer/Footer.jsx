@@ -4,7 +4,7 @@ import Logo from "../../assets/Logo.jpg";
 function Footer() {
   return (
     <>
-      <div className="h-fit bg-white md:py-14 py-8 border-t border-blue-300">
+      <div className="h-fit bg-white md:py-14 py-8 border-t border-blue-100">
         <div className="flex md:flex-row flex-col  md:w-3/4 w-11/12 h-full m-auto ">
           <div className="md:w-1/6 w-full h-full flex m-auto md:mb-0 mb-8">
             <img src={Logo} alt="logo" className="md:h-28 h-16" />
@@ -55,7 +55,7 @@ function Footer() {
             </p>
             <input
               type="text"
-              className="py-2 px-2 w-full border rounded-md border-blue-300 shadow-md"
+              className="py-2 px-2 w-full border rounded-md border-blue-100 shadow-md"
               placeholder="Email"
             />
             <p>
@@ -64,7 +64,7 @@ function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex md:w-3/5 w-11/12 m-auto border-b border-blue-300 shadow-md md:mt-16 mt-4 mb-4"></div>
+        <div className="flex md:w-3/5 w-11/12 m-auto border-b-2 border-blue-100 shadow-lg md:mt-16 mt-4 mb-4"></div>
         <div className="flex md:flex-row flex-col md:gap-8 gap-2 md:w-3/5 w-11/12 m-auto">
           <p>© 2024 Your Company. All rights reserved.</p>
           <p>Privacy Policy</p>

@@ -8,6 +8,9 @@ import Home from "./Home.jsx";
 import Associates from "./Associates.jsx";
 import Contact from "./ContactUs.jsx";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const router = createBrowserRouter([
   {
     path: "/",

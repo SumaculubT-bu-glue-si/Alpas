@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 function Services() {
   return (
     <>
-      <div className="h-fit bg-gray-100 md:py-20 py-6">
+      <div className="h-fit bg-gray-100">
         <div className="md:w-3/4 w-10/11 md:m-auto">
           <div className="md:w-2/3 w-full md:px-0 px-8">
-            <div className="text-gray-900 md:text-6xl text-5xl font-bold pt-24">
+            <div className="text-gray-900 md:text-6xl text-5xl font-bold md:pt-24 pt-10">
               Transforming Ideas into Reality: Your Alpas Tech Service Team
             </div>
             <div className="pt-10 text-gray-900 md:text-xl text-lg">
@@ -24,13 +24,13 @@ function Services() {
             </div>
           </div>
 
-          <div className="flex h-96 md:w-full w-11/12 m-auto bg-white rounded-lg mt-10 border border-blue-200 shadow-md transform hover:scale-105 duration-300">
+          <div className="flex h-96 md:w-full w-11/12 m-auto bg-white rounded-lg mt-10 border border-blue-100 shadow-md transform hover:scale-105 hover:shadow-xl duration-300">
             <div className="flex m-auto text-gray-200 text-8xl font-bold">
               Image
             </div>
           </div>
 
-          <div className="flex md:flex-row flex-col fit-96 w-full mt-20 my-auto">
+          <div className="flex md:flex-row flex-col w-full mt-20 my-auto">
             <div className="flex flex-col h-full md:w-1/2 w-11/12 md:pb-0 pb-10 m-auto">
               <h1 className="text-gray-900 font-bold text-4xl">
                 Transform Your Ideas into Powerful Web Applications
@@ -44,12 +44,15 @@ function Services() {
               </p>
               <div className="flex flex-row gap-4">
                 <div className="py-2 px-4 border border-gray-700">See More</div>
-                <div className="py-2 px-4 flex flex-row gap-2">
-                  <p>Contact Us</p> <p className="text-3xl -mt-2">›</p>
+                <div className="py-2 px-4 flex flex-row gap-2 cursor-pointer">
+                  <p>Contact Us</p>{" "}
+                  <p className="text-3xl -mt-2 hover:translate-x-4 duration-300 pl-24 -ml-24">
+                    ›
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 ease-in-out duration-300">
+            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl ease-in-out duration-300">
               <div className="text-gray-200 font-bold text-4xl flex m-auto ">
                 Image
               </div>
@@ -88,7 +91,7 @@ function Services() {
                 </div>
               </div>
             </div>
-            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 ease-in-out duration-300">
+            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl ease-in-out duration-300">
               <div className="text-gray-200 font-bold text-4xl flex m-auto">
                 Image
               </div>
@@ -110,11 +113,14 @@ function Services() {
               <div className="flex flex-row gap-4">
                 <div className="py-2 px-4 border border-gray-700">See More</div>
                 <div className="py-2 px-4 flex flex-row gap-2">
-                  <p>Contact Us</p> <p className="text-3xl -mt-2">›</p>
+                  <p>Contact Us</p>{" "}
+                  <p className="text-3xl -mt-2 hover:translate-x-4 duration-300 pl-24 -ml-24">
+                    ›
+                  </p>
                 </div>
               </div>
             </div>
-            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 ease-in-out duration-300">
+            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl ease-in-out duration-300">
               <div className="text-gray-200 font-bold text-4xl flex m-auto">
                 Image
               </div>
@@ -122,7 +128,7 @@ function Services() {
           </div>
 
           <div className="flex md:flex-row flex-col fit-96 w-full mt-20 my-auto">
-            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 ease-in-out duration-300">
+            <div className="flex h-96 md:w-1/2 w-11/12 m-auto bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl ease-in-out duration-300">
               <div className="text-gray-200 font-bold text-4xl flex m-auto">
                 Image
               </div>
@@ -141,7 +147,10 @@ function Services() {
               <div className="flex flex-row gap-4">
                 <div className="py-2 px-4 border border-gray-700">See More</div>
                 <div className="py-2 px-4 flex flex-row gap-2">
-                  <p>Contact Us</p> <p className="text-3xl -mt-2">›</p>
+                  <p>Contact Us</p>{" "}
+                  <p className="text-3xl -mt-2 hover:translate-x-4 duration-300 pl-24 -ml-24">
+                    ›
+                  </p>
                 </div>
               </div>
             </div>
@@ -168,7 +177,7 @@ function Services() {
             <div className="flex my-10">
               <div className="flex md:flex-row flex-col gap-8">
                 <div className="flex flex-col md:w-1/3 w-11/12 h-fit md:gap-8 gap-2 m-auto">
-                  <div className="h-64 w-full bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 duration-300"></div>
+                  <div className="h-64 w-full bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl duration-300"></div>
                   <p className="text-gray-900 font-bold text-xl">
                     Expert Web App Development to Bring Your Ideas to Life
                   </p>
@@ -177,12 +186,15 @@ function Services() {
                     our expert team.
                   </p>
                   <div className="flex flex-row gap-2 text-gray-900 text-base">
-                    <p>See More</p> <p className="text-3xl -mt-2">›</p>
+                    <p>See More</p>{" "}
+                    <p className="text-3xl -mt-2 hover:translate-x-4 duration-300 pl-24 -ml-24">
+                      ›
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex flex-col md:w-1/3 w-11/12 h-fit md:gap-8 gap-2 m-auto">
-                  <div className="h-64 w-full bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 duration-300"></div>
+                  <div className="h-64 w-full bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl duration-300"></div>
                   <p className="text-gray-900 font-bold text-xl">
                     Capture Unforgettable Moments with Our Professional Event
                     Photography Services
@@ -192,12 +204,15 @@ function Services() {
                     your events beautifully.
                   </p>
                   <div className="flex flex-row gap-2 text-gray-900 text-base">
-                    <p>See More</p> <p className="text-3xl -mt-2">›</p>
+                    <p>See More</p>{" "}
+                    <p className="text-3xl -mt-2 hover:translate-x-4 duration-300 pl-24 -ml-24">
+                      ›
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex flex-col md:w-1/3 w-11/12 h-fit md:gap-8 gap-2 m-auto">
-                  <div className="h-64 w-full bg-white rounded-lg border border-blue-200 shadow-md hover:scale-105 duration-300"></div>
+                  <div className="h-64 w-full bg-white rounded-lg border border-blue-100 shadow-md hover:scale-105 hover:shadow-xl duration-300"></div>
                   <p className="text-gray-900 font-bold text-xl">
                     Stunning Event Videography That Tells Your Story in Motion
                   </p>
@@ -206,7 +221,10 @@ function Services() {
                     event's memories.
                   </p>
                   <div className="flex flex-row gap-2 text-gray-900 text-base">
-                    <p>See More</p> <p className="text-3xl -mt-2">›</p>
+                    <p>See More</p>{" "}
+                    <p className="text-3xl -mt-2 hover:translate-x-4 duration-300 pl-24 -ml-24">
+                      ›
+                    </p>
                   </div>
                 </div>
               </div>
